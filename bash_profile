@@ -19,4 +19,5 @@ alias be='bundle exec'
 
 # tmux commands
 alias tkill='tmux kill-session -t'
+alias tmassacre='tmux kill-server'
 alias railmux='~/.railmux.sh'

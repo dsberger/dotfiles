@@ -4,3 +4,4 @@ noremap <Left> <NOP>
 noremap <Right> <NOP>
 
 syntax on
+setlocal shiftwidth=2
