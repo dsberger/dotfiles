@@ -21,3 +21,13 @@ alias be='bundle exec'
 alias tkill='tmux kill-session -t'
 alias tmassacre='tmux kill-server'
 alias railmux='~/.railmux.sh'
+
+# "Model open"
+mopen () {
+  vim -p app/models/$1.rb spec/models/$1_spec.rb
+}
+
+# "Controller open"
+copen () {
+  vim -p app/controllers/$1_controller.rb spec/controllers/$1_controller_spec.rb
+}
