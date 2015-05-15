@@ -31,3 +31,9 @@ mopen () {
 copen () {
   vim -p app/controllers/$1_controller.rb spec/controllers/$1_controller_spec.rb
 }
+
+# Open in Google Chrome
+alias chrome='open -a "Google Chrome"'
+
+# Tiny Ruby Server on localhost:8000
+alias serve8000='ruby -run -ehttpd . -p8000'
