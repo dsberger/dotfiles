@@ -7,4 +7,11 @@ inoremap jk <Esc>
 inoremap kj <Esc>
 
 syntax on
-setlocal shiftwidth=2
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set number
+set autoindent
+
+match ErrorMsg '\s\+$'
+nnoremap <Leader>rtw :%s/\s\+$//e<CR>

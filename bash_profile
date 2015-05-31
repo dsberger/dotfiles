@@ -24,7 +24,7 @@ alias railmux='~/.railmux.sh'
 
 # "Model open"
 mopen () {
-  vim -p app/models/$1.rb spec/models/$1_spec.rb
+  vim -p app/models/$1.rb spec/models/$1_spec.rb spec/factories/$1s.rb
 }
 
 # "Controller open"
