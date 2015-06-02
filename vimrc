@@ -6,6 +6,8 @@ noremap <Right> <NOP>
 inoremap jk <Esc>
 inoremap kj <Esc>
 
+let mapleader = "\<Space>"
+
 syntax on
 set tabstop=2
 set shiftwidth=2
