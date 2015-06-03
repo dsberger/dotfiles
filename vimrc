@@ -17,3 +17,5 @@ set autoindent
 
 match ErrorMsg '\s\+$'
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+
+execute pathogen#infect()
