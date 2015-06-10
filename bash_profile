@@ -8,6 +8,7 @@ source ~/.profile
 alias gs='git status'
 alias gaa="git add -A"
 alias gcam="git commit -am"
+alias grv="git remote -v"
 alias pushom='git push origin master'
 alias pullom='git pull origin master'
 
