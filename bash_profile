@@ -9,6 +9,7 @@ alias gs='git status'
 alias gaa="git add -A"
 alias gcam="git commit -am"
 alias grv="git remote -v"
+alias gcb="git checkout -b"
 alias pushom='git push origin master'
 alias pullom='git pull origin master'
 
