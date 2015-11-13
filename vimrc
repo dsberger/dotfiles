@@ -16,6 +16,7 @@ Plugin 'VundleVim/Vundle.vim' "must come first
 Plugin 'tpope/vim-sensible'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 
 " Vundle Footer
 call vundle#end()
