@@ -1,32 +1,57 @@
-set nocompatible      " We're running Vim, not Vi!
+"=======================
+" Vundle Plugins
+"=======================
 
-"Arrow keys disabled in normal mode
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+"Vundle Header
+set nocompatible              " be iMproved, required
+filetype off                  " required
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
 
-"JK combo mapped to Escape
-inoremap jk <Esc>
-inoremap kj <Esc>
+"Plugins list
+Plugin 'tpope/vim-sensible'
 
-"Leader mapped to spacebar
+"Vundle Footer
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+"=======================
+" End of Vundle Plugins
+"=======================
+
+"Set spacebar to leader
 let mapleader = "\<Space>"
 
-set number
-set expandtab
-set tabstop=2 shiftwidth=2 softtabstop=2
-set autoindent
+"======================
+" Normal Mode Mappings
+"======================
+nmap <Up> <NOP>
+nmap <Down> <NOP>
+nmap <Left> <NOP>
+nmap <Right> <NOP>
+nmap 0 ^
+nmap j gj
+nmap k gk
+
+"======================
+" Insert Mode Mappings
+"======================
+imap jk <Esc>
+imap kj <Esc>
+
+"==========
+" Settings
+"==========
+set number "Adds line numbers
 
 
-syntax on
-filetype on           " Enable filetype detection
-filetype indent on    " Enable filetype-specific indenting
-filetype plugin on    " Enable filetype-specific plugins
+"=================
+" Leader Mappings
+"=================
 
-"Highlight and delete trailing mhitespace
-match ErrorMsg '\s\+$'
-nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+"S
+nmap <leader>so :source $MYVIMRC<cr>
 
-"Pathogen for plugins
-execute pathogen#infect()
+"V
+nmap <leader>vi :tabe $MYVIMRC<cr>
