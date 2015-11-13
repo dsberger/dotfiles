@@ -1,31 +1,28 @@
-"=======================
-" Vundle Plugins
-"=======================
+" SETTINGS
+"==========================
+set nocompatible
+set number "Adds line numbers
+"==========================
 
-"Vundle Header
-set nocompatible              " be iMproved, required
-filetype off                  " required
+
+" VUNDLE PLUGINS
+"==========================
+filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
 
-"Plugins list
+" List of Plugins
+Plugin 'VundleVim/Vundle.vim' "must come first
 Plugin 'tpope/vim-sensible'
 
-"Vundle Footer
-call vundle#end()            " required
-filetype plugin indent on    " required
+" Vundle Footer
+call vundle#end()
+filetype plugin indent on
+"==========================
 
-"=======================
-" End of Vundle Plugins
-"=======================
 
-"Set spacebar to leader
-let mapleader = "\<Space>"
-
-"======================
-" Normal Mode Mappings
-"======================
+" MODAL MAPPINGS
+"==========================
 nmap <Up> <NOP>
 nmap <Down> <NOP>
 nmap <Left> <NOP>
@@ -33,25 +30,18 @@ nmap <Right> <NOP>
 nmap 0 ^
 nmap j gj
 nmap k gk
-
-"======================
-" Insert Mode Mappings
-"======================
 imap jk <Esc>
 imap kj <Esc>
-
-"==========
-" Settings
-"==========
-set number "Adds line numbers
+"==========================
 
 
-"=================
-" Leader Mappings
-"=================
+" LEADER MAPPINGS
+"==========================
+let mapleader = "\<Space>"
 
-"S
+" S
 nmap <leader>so :source $MYVIMRC<cr>
 
-"V
+" V
 nmap <leader>vi :tabe $MYVIMRC<cr>
+"==========================
