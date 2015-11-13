@@ -14,6 +14,7 @@ call vundle#begin()
 " List of Plugins
 Plugin 'VundleVim/Vundle.vim' "must come first
 Plugin 'tpope/vim-sensible'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " Vundle Footer
 call vundle#end()
