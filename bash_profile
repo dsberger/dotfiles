@@ -24,6 +24,8 @@ alias tkill='tmux kill-session -t'
 alias tmassacre='tmux kill-server'
 alias railmux='~/.railmux.sh'
 
+alias vim="/usr/local/bin/vim"
+
 # "Model open"
 mopen () {
   vim -p app/models/$1.rb spec/models/$1_spec.rb spec/factories/$1s.rb
