@@ -19,6 +19,7 @@ Plugin 'tpope/vim-sensible'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
+Plugin 'ntpeters/vim-better-whitespace'
 
 " Vundle Footer
 call vundle#end()
@@ -46,6 +47,10 @@ let mapleader = "\<Space>"
 
 " S
 nmap <leader>so :source $MYVIMRC<cr>
+nmap <leader>sw :StripWhitespace<cr>
+
+" T
+nmap <leader>tw :ToggleWhitespace<cr>
 
 " V
 nmap <leader>vi :tabe $MYVIMRC<cr>
