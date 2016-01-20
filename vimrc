@@ -20,6 +20,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'alvan/vim-closetag'
 
 " Vundle Footer
 call vundle#end()
@@ -40,10 +42,15 @@ imap jk <Esc>
 imap kj <Esc>
 "==========================
 
+" filenames like *.xml, *.html, *.xhtml, ...
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb"
 
 " LEADER MAPPINGS
 "==========================
 let mapleader = "\<Space>"
+
+" R
+nmap <leader>r :!rake<cr>
 
 " S
 nmap <leader>so :source $MYVIMRC<cr>

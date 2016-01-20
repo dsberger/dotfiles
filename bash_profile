@@ -26,6 +26,8 @@ alias railmux='~/.railmux.sh'
 
 alias vim="/usr/local/bin/vim"
 
+alias r="rails"
+
 # "Model open"
 mopen () {
   vim -p app/models/$1.rb spec/models/$1_spec.rb spec/factories/$1s.rb
