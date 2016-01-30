@@ -51,7 +51,7 @@ let mapleader = "\<Space>"
 
 "C
 "'copy all' of file
-nmap <leader>ca gg<cr>yG<cr>``
+nmap <leader>ca gg<cr>yG``
 
 " R
 nmap <leader>r :!rake<cr>
