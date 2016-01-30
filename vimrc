@@ -49,6 +49,10 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb"
 "==========================
 let mapleader = "\<Space>"
 
+"C
+"'copy all' of file
+nmap <leader>ca gg<cr>yG<cr>``
+
 " R
 nmap <leader>r :!rake<cr>
 
