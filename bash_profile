@@ -6,12 +6,14 @@ source ~/.profile
 
 # Git commands
 alias gs='git status'
-alias gaa="git add -A"
-alias gcam="git commit -am"
-alias grv="git remote -v"
-alias gcb="git checkout -b"
+alias gaa='git add -A'
+alias gcam='git commit -am'
+alias grv='git remote -v'
+alias gcb='git checkout -b'
 alias pushom='git push origin master'
 alias pullom='git pull origin master'
+alias gmm='git merge master'
+alias gcm='git checkout master'
 
 # Bundle commands
 alias b='bundle'
