@@ -4,6 +4,8 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 source ~/.profile
 
+alias g='git'
+
 # Bundle commands
 alias b='bundle'
 alias e='exec'
