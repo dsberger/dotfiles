@@ -12,4 +12,12 @@
 	keepBackup = false
 	prompt = false
 [alias]
+  cam = commit -am
+  cnb = checkout -b
+  cm = checkout master
+  mm = merge master
+  pullom = pull origin master
+  pushom = push origin master
 	sla = log --oneline --decorate --graph --all
+  s = status
+  rv = remote -v
