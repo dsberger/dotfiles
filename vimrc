@@ -22,6 +22,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'alvan/vim-closetag'
+Plugin 'Townk/vim-autoclose'
 
 " Vundle Footer
 call vundle#end()
