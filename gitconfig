@@ -19,5 +19,4 @@
   pullom = pull origin master
   pushom = push origin master
 	sla = log --oneline --decorate --graph --all
-  s = status
   rv = remote -v
