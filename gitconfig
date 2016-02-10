@@ -1,0 +1,15 @@
+[user]
+	name = Dan Berger
+	email = dsberger@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	keepBackup = false
+	prompt = false
+[alias]
+	sla = log --oneline --decorate --graph --all
