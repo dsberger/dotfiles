@@ -16,11 +16,15 @@ call vundle#begin()
 " List of Plugins
 Plugin 'VundleVim/Vundle.vim' "must come first
 Plugin 'tpope/vim-sensible'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tpope/vim-surround'
+Plugin 'ctrlpvim/ctrlp.vim' "file search in current dir
 Plugin 'tpope/vim-repeat'
 Plugin 'ntpeters/vim-better-whitespace'
+
+" Language and framework specific
 Plugin 'vim-ruby/vim-ruby'
+
+" Symmetry
+Plugin 'tpope/vim-surround'
 Plugin 'alvan/vim-closetag'
 Plugin 'Townk/vim-autoclose'
 
