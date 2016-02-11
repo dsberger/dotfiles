@@ -34,6 +34,13 @@ filetype plugin indent on
 "==========================
 
 
+" PLUGIN CONFIGURATIONS
+"==========================
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb"
+let g:AutoClosePairs_add = "|"
+"==========================
+
+
 " MODAL MAPPINGS
 "==========================
 nmap <Up> <NOP>
@@ -45,18 +52,16 @@ nmap j gj
 nmap k gk
 imap jk <Esc>
 imap kj <Esc>
+imap {<cr> {<cr>}<Esc>O<tab>
 "==========================
 
-" filenames like *.xml, *.html, *.xhtml, ...
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb"
 
 " LEADER MAPPINGS
 "==========================
 let mapleader = "\<Space>"
 
 "C
-"'copy all' of file
-nmap <leader>ca ggyG``
+nmap <leader>ca ggyG`` "_copy all_ of file
 
 " R
 nmap <leader>r :!rake<cr>
