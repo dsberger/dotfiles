@@ -20,7 +20,6 @@ source $ZSH/oh-my-zsh.sh
 alias chrome='open -a "Google Chrome"'
 alias g='git'
 alias md='open -a "Macdown"'
-alias r='rails'
 alias railmux='~/.railmux.sh'
 alias serve8000='ruby -run -ehttpd . -p8000' #Tiny ruby server
 alias tkill='tmux kill-session -t'
