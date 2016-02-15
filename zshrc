@@ -2,8 +2,6 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Manual Aliases
-alias be='bundle exec'
-alias bi='bundle install'
 alias chrome='open -a "Google Chrome"'
 alias g='git'
 alias md='open -a "Macdown"'
