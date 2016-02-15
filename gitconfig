@@ -11,6 +11,3 @@
 [mergetool]
 	keepBackup = false
 	prompt = false
-[alias]
-[gitsh]
-  noGreeting = true
