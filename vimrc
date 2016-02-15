@@ -22,6 +22,8 @@ Plugin 'ntpeters/vim-better-whitespace'
 
 " Language and framework specific
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
 
 " Symmetry
 Plugin 'tpope/vim-surround'
