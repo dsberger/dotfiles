@@ -7,7 +7,7 @@ ENABLE_CORRECTION="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(bundler rails)
+plugins=(bundler git rails)
 
 # User configuration
 
@@ -18,7 +18,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 alias chrome='open -a "Google Chrome"'
-alias g='git'
 alias md='open -a "Macdown"'
 alias railmux='~/.railmux.sh'
 alias serve8000='ruby -run -ehttpd . -p8000' #Tiny ruby server
