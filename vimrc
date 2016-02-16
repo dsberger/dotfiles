@@ -67,8 +67,10 @@ nmap <leader>ca ggyG`` "_copy all_ of file
 
 " R
 nmap <leader>r :!rake<cr>
+nmap <leader>rou :tabe config/routes.rb<cr>
 
 " S
+nmap <leader>sch :tabe db/schema.rb<cr>
 nmap <leader>so :source $MYVIMRC<cr>
 nmap <leader>sw :StripWhitespace<cr>
 
