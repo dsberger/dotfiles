@@ -38,7 +38,7 @@ filetype plugin indent on
 
 " PLUGIN CONFIGURATIONS
 "==========================
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb"
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb,*.ejs"
 let g:AutoClosePairs_add = "|"
 "==========================
 
