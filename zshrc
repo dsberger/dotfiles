@@ -25,3 +25,7 @@ alias serve8000='ruby -run -ehttpd . -p8000' #Tiny ruby server
 alias tkill='tmux kill-session -t'
 alias tmassacre='tmux kill-server'
 alias vim="/usr/local/bin/vim"
+
+# NVM
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
