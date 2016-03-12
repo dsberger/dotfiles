@@ -60,7 +60,7 @@ nmap j gj
 nmap k gk
 imap jk <Esc>
 imap kj <Esc>
-imap {<cr> {<cr>}<Esc>O<tab>
+imap {<cr> {<cr>}<Esc>O<space><space>
 "==========================
 
 
