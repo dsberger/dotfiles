@@ -19,6 +19,7 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias chrome='open -a "Google Chrome"'
 alias fin='ggp && exit'
+alias lm='cd ~/Documents/life-mgmt'
 alias md='open -a "Macdown"'
 alias railmux='~/.railmux.sh'
 alias serve8000='ruby -run -ehttpd . -p8000' #Tiny ruby server
