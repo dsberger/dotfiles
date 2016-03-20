@@ -2,8 +2,21 @@
 "==========================
 set nocompatible
 set number "Adds line numbers
+set relativenumber
 set tabstop=2 shiftwidth=2 expandtab
 set clipboard=unnamed
+set hlsearch
+set ignorecase
+set smartcase
+
+" flexible window panes that shift with focus
+set winwidth=84
+set winheight=5
+set winminheight=5
+set winheight=999
+
+set splitbelow
+set splitright
 "==========================
 
 
@@ -74,6 +87,9 @@ imap {<cr> {<cr>}<Esc>O<space><space>
 "==========================
 let mapleader = "\<Space>"
 
+" H
+nmap <leader>h :nohlsearch<cr>
+
 " R
 nmap <leader>r :!rake<cr>
 nmap <leader>rou :tabe config/routes.rb<cr>
@@ -88,4 +104,7 @@ nmap <leader>tw :ToggleWhitespace<cr>
 
 " V
 nmap <leader>vi :tabe $MYVIMRC<cr>
+
+"W
+nmap <leader>w <C-w>
 "==========================
