@@ -35,12 +35,17 @@ Plugin 'ntpeters/vim-better-whitespace' "whitespace highlighting and deletion
 Plugin 'alvan/vim-closetag'             "balanced HTML tag handling
 Plugin 'tpope/vim-commentary'           "language-neutral commenting commands
 Plugin 'ctrlpvim/ctrlp.vim'             "file search in current dir
+Plugin 'nathanaelkane/vim-indent-guides' "indentations
+Plugin 'jelera/vim-javascript-syntax'   "JavaScript Syntax
+Plugin 'pangloss/vim-javascript'        "JavaScript
+
 Plugin 'tpope/vim-repeat'               "allows plugin commands to be repeated with dot(.)
 Plugin 'vim-ruby/vim-ruby'              "Ruby
 Plugin 'tpope/vim-surround'             "defines 's' as surround command
 Plugin 'kana/vim-textobj-entire'        "defines 'e' as entire buffer
 Plugin 'nelstrom/vim-textobj-rubyblock' "defines 'r' as ruby block
 Plugin 'kana/vim-textobj-user'          "dependency for other block definitions
+Plugin 'leafgarland/typescript-vim'     "TypeScript
 
 
 " Vundle Footer
@@ -79,13 +84,16 @@ nmap j gj
 nmap k gk
 imap jk <Esc>
 imap kj <Esc>
-imap {<cr> {<cr>}<Esc>O<space><space>
+imap {<cr> {<cr>}<Esc>O
 "==========================
 
 
 " LEADER MAPPINGS
 "==========================
 let mapleader = "\<Space>"
+
+";
+nmap <leader>; A;<esc>j
 
 " H
 nmap <leader>h :nohlsearch<cr>
