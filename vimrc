@@ -38,7 +38,7 @@ Plugin 'ctrlpvim/ctrlp.vim'             "file search in current dir
 Plugin 'nathanaelkane/vim-indent-guides' "indentations
 Plugin 'jelera/vim-javascript-syntax'   "JavaScript Syntax
 Plugin 'pangloss/vim-javascript'        "JavaScript
-
+Plugin 'digitaltoad/vim-pug'            "Jade/Pug
 Plugin 'tpope/vim-repeat'               "allows plugin commands to be repeated with dot(.)
 Plugin 'vim-ruby/vim-ruby'              "Ruby
 Plugin 'tpope/vim-surround'             "defines 's' as surround command
