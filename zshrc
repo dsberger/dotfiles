@@ -24,10 +24,8 @@ alias guns='git reset' #requires filename
 alias lm='cd ~/Life-Mgmt'
 alias md='open -a "Macdown"'
 alias mph='mocha-phantomjs'
-alias railmux='~/.railmux.sh'
 alias serve8000='ruby -run -ehttpd . -p8000' #Tiny ruby server
 alias soz='source ~/.zshrc'
-alias tat='~/.tat.sh'
 alias vim="/usr/local/bin/vim"
 alias woak='curl wttr.in/Oakland'
 
