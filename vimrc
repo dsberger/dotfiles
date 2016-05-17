@@ -82,9 +82,11 @@ nmap <Right> <NOP>
 nmap 0 ^
 nmap j gj
 nmap k gk
-imap jk <Esc>
-imap kj <Esc>
-imap {<cr> {<cr>}<Esc>O
+imap jk <esc>
+imap JK <esc>
+imap kj <esc>
+imap KJ <esc>
+imap {<cr> {<cr>}<esc>O
 "==========================
 
 
@@ -115,4 +117,8 @@ nmap <leader>vi :tabe $MYVIMRC<cr>
 
 "W
 nmap <leader>w <C-w>
+
+"Z
+nmap <leader>zsh :tabe ~/dotfiles/zshrc<cr>
+
 "==========================
