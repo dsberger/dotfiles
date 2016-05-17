@@ -16,13 +16,17 @@ create_new_session(){
 
 
 if inside_tmux; then
+
   if new_session; then
     ( TMUX='' create_new_session;)
   fi
   tmux switch-client -t vmail
+
 else
+
   if new_session; then
     create_new_session;
   fi
   tmux attach -t vmail
+
 fi
