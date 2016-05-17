@@ -1,0 +1,28 @@
+#!/bin/zsh
+
+new_session() {
+  ! ( tmux list-sessions | sed -E 's/:.*$//' | grep -q "vmail" )
+}
+
+inside_tmux() {
+  ! [ -z "$TMUX" ]
+}
+
+create_new_session(){
+  tmux new-session -d -s vmail
+  tmux send-keys -t vmail 'cd ~' Enter
+  tmux send-keys -t vmail 'vmail' Enter
+}
+
+
+if inside_tmux; then
+  if new_session; then
+    ( TMUX='' create_new_session;)
+  fi
+  tmux switch-client -t vmail
+else
+  if new_session; then
+    create_new_session;
+  fi
+  tmux attach -t vmail
+fi
