@@ -4,19 +4,22 @@
 
 session_name="$(basename "$PWD" | tr . -)"
 
-session_exists() {
-  tmux list-sessions | sed -E 's/:.*$//' | grep -q "^$session_name$"
+new_session() {
+  ! ( tmux list-sessions | sed -E 's/:.*$//' | grep -q "^$session_name$" )
 }
 
-not_in_tmux() {
-  [ -z "$TMUX" ]
+inside_tmux() {
+  ! [ -z "$TMUX" ]
 }
 
-if not_in_tmux; then
-  tmux new-session -As "$session_name"
-else
-  if ! session_exists; then
+if inside_tmux; then
+
+  if new_session; then
     (TMUX='' tmux new-session -Ad -s "$session_name")
   fi
   tmux switch-client -t "$session_name"
+
+else
+
+  tmux new-session -As "$session_name"
 fi
