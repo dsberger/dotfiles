@@ -4,7 +4,7 @@ set nocompatible
 set number "Adds line numbers
 set relativenumber
 set tabstop=2 shiftwidth=2 expandtab
-set clipboard=unnamed
+set clipboard+=unnamed
 set hlsearch
 set ignorecase
 set smartcase
@@ -35,6 +35,7 @@ Plugin 'ntpeters/vim-better-whitespace' "whitespace highlighting and deletion
 Plugin 'alvan/vim-closetag'             "balanced HTML tag handling
 Plugin 'tpope/vim-commentary'           "language-neutral commenting commands
 Plugin 'ctrlpvim/ctrlp.vim'             "file search in current dir
+Plugin 'scrooloose/syntastic'           "syntax checking tool
 Plugin 'nathanaelkane/vim-indent-guides' "indentations
 Plugin 'jelera/vim-javascript-syntax'   "JavaScript Syntax
 Plugin 'pangloss/vim-javascript'        "JavaScript
@@ -64,6 +65,16 @@ filetype plugin indent on
 "==========================
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb,*.ejs"
 let g:AutoClosePairs_add = "|"
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['standard']
 "==========================
 
 
@@ -96,6 +107,9 @@ let mapleader = "\<Space>"
 
 ";
 nmap <leader>; A;<esc>j
+
+" C
+nmap <leader>c; :%s/;$//<cr>
 
 " H
 nmap <leader>h :nohlsearch<cr>

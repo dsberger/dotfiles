@@ -18,11 +18,13 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 alias chrome='open -a "Google Chrome"'
+alias nc='node server/db/console.js'
 alias fin='ggp && exit'
 alias gunc='git reset --soft HEAD^'
 alias guns='git reset' #requires filename
 alias lm='cd ~/Life-Mgmt'
 alias md='open -a "Macdown"'
+alias nightwatch='nightwatch -c config/nightwatch.js'
 alias pro='protractor test/protractor-conf.js'
 alias seq='sequelize'
 alias serve8000='ruby -run -ehttpd . -p8000' #Tiny ruby server
